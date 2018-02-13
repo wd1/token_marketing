@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "title": "Access An Open Financial System",
+    "text": "Toshi is a browser for the Ethereum network that provides universal access to financial services."
+  },
+  "features": [
+    {
+      "icon": "global",
+      "title": "Instant Global Payments",
+      "text": "Control your own money, and send it anywhere."
+    },
+    {
+      "icon": "control",
+      "title": "Secure Messaging",
+      "text": "Communicate with people and apps over end-to-end encrypted chat."
+    },
+    {
+      "icon": "ethereum",
+      "title": "An App Ecosystem",
+      "text": "Browse third party financial applications powered by Ethereum."
+    }
+  ],
+  "about": "About",
+  "blog": "Blog",
+  "developers": "Developers",
+  "footer": {
+    "general": "General",
+    "platform": "Platform",
+    "documentation": "Documentation",
+    "copy": "© 2017 Toshi"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "About Toshi",
+      "text": [
+        "Toshi is an <a href='https://github.com/toshiapp'>open source</a> browser for the Ethereum network. Our mission is to provide universal access to financial services."
+      ]
+    },
+    "sections": [
+      {
+        "title": "What we believe",
+        "body": [
+          {
+            "type": "heading",
+            "value": "Everyone deserves access to financial services"
+          },
+          {
+            "type": "text",
+            "value": "We believe that controlling your own wealth is a basic human right, and that everyone on the planet should have access to financial services. Financial inclusion will level the playing field and lift millions out of poverty."
+          },
+          {
+            "type": "heading",
+            "value": "Open protocols win"
+          },
+          {
+            "type": "text",
+            "value": "We believe digital currency has the power to bring about more innovation, economic freedom, and equality of opportunity in the world. An open financial system will empower people."
+          },
+          {
+            "type": "heading",
+            "value": "Technology should be easy to use"
+          },
+          {
+            "type": "text",
+            "value": "We would like to make digital currency accessible to everyone, and to dramatically lower the barrier for new digital currency apps to be created."
+          }
+        ]
+      },
+      {
+        "title": "How it's built",
+        "body": [
+          {
+            "type": "text",
+            "value": "Toshi is built like a web browser (we don't host any of the apps or have access to customer funds). It is a piece of software that runs on the customer's computer, and sensitive information (like private keys) never leave that computer."
+          },
+          {
+            "type": "text",
+            "value": "We have official clients for Android and iOS today."
+          },
+          {
+            "type": "text",
+            "value": "Toshi uses a variety of open protocols, including the Signal protocol by Whisper Systems for end-to-end encrypted chat, the Ethereum network to transfer value, the SOFA protocol to enable third party apps, and (coming soon) the uPort identity protocol to store user profiles. <a href='http://developers.toshi.org/'>Read more</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

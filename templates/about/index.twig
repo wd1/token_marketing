@@ -1,0 +1,27 @@
+{% extends "../_layout/main.twig" %}
+{% set page = "about" %}
+
+{% block content %}
+  <div class="wrap page">
+    <div class="page-hero">
+      <h1 class="page-hero__title alpha">{{ aboutPage.hero.title }}</h1>
+      {% for text in aboutPage.hero.text %}
+        <p class="text">{{ text }}</p>
+      {% endfor %}
+    </div>
+    <div class="grid about">
+      {% for section in aboutPage.sections %}
+        <div class="grid__item">
+          <h2 class="beta">{{ section.title }}</h2>
+          {% for block in section.body %}
+            {% if block.type == "heading" %}
+              <h3 class="zeta">{{ block.value }}</h3>
+            {% else %}
+              <p class="text">{{ block.value }}</p>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,70 @@
+.site-header {
+  color: #181A20;
+  padding-top: 1rem;
+  background-color: #fff;
+  color: #181A20;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(58,58,58,.05);
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+
+.site-header--page {
+  margin-bottom: 8.75rem;
+  color: #161616;
+  @media breakpoints.small {
+    margin-bottom: 5rem; 
+  }
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a.token-logo {
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+
+.logo {
+  fill: currentColor;
+  width: 90px;
+  height: auto;
+}
+
+ @media breakpoints.small {
+   .logo-text {
+     display: none;
+   }
+ }
+
+
+.header-nav__list {
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+}
+
+.header-nav__list-item {
+  margin-left: 2.5rem;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    color: colors.green;
+  }
+}
+
+.is-active {
+  color: colors.green;
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -d public ]; then
+    rm -rf public
+fi
+npm run prod
+cd public
+rm -rf .git
+echo www.toshi.org > CNAME
+git init
+git remote add gh-pages git@github.com:toshiapp/toshiapp.github.io.git
+git add .
+git commit -m "Build on $(date)"
+git push --force gh-pages master

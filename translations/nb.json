@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "title": "Your gateway to an open financial system",
+    "text": "<p>Token is a browser for the ethereum network.</p><p>We make it easy to use and build digital currency apps.</p>"
+  },
+  "signUp": "Sign up to get notified",
+  "features": [
+    {
+      "icon": "money",
+      "title": "Earn money",
+      "text": "Token has a number of apps that allow you to earn a living."
+    },
+    {
+      "icon": "send",
+      "title": "Send it anywhere",
+      "text": "Send money to friends and family anywhere in the world."
+    },
+    {
+      "icon": "control",
+      "title": "Stay in control",
+      "text": "Token never has access to your money, only you do."
+    }
+  ],
+  "calloutTitle": "Our mission is to provide universal access to financial services",
+  "about": "About",
+  "blog": "Blog",
+  "developers": "Developers",
+  "footer": {
+    "general": "General",
+    "platform": "Platform",
+    "documentation": "Documentation",
+    "copy": "© 2017 Token. All rights reserved."
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "About Token",
+      "text": [
+        "Token is an <a href='#'>open source</a> browser for the ethereum network being developed by a passionate group of developers and designers in San Francisco and Oslo.",
+        "Our mission is to provide universal access to financial services."
+      ]
+    },
+    "sections": [
+      {
+        "title": "What we believe",
+        "body": [
+          {
+            "type": "heading",
+            "value": "Everyone deserves access to financial services"
+          },
+          {
+            "type": "text",
+            "value": "We believe that controlling your own wealth is a basic human right, and that everyone on the planet should have access to financial services. This will level the playing field and lift millions out of poverty."
+          },
+          {
+            "type": "heading",
+            "value": "Technology should be easy to use"
+          },
+          {
+            "type": "text",
+            "value": "Our goal is to make the power of digital currency accessible to everyone, and to dramatically lower the barrier for new digital currency apps to be created. With this in mind, we’ve created a radically simpler interface for financial applications."
+          },
+          {
+            "type": "heading",
+            "value": "Security is key"
+          },
+          {
+            "type": "text",
+            "value": "When people know their hard earned wealth can't be lost, stolen, taken from them, they feel empowered to think bigger, and try harder."
+          }
+        ]
+      },
+      {
+        "title": "How it's built",
+        "body": [
+          {
+            "type": "text",
+            "value": "Token is architected to be similar to a web browser. Instead of letting your browse the internet, it lets your browse the Ethereum network. We never have access to customer funds and we do not host the apps that you access through Token. <a href='#'>Read more</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

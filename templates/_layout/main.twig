@@ -1,0 +1,54 @@
+{% import "../_svg/utils.twig" as svg %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toshi</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152.png">
+  </head>
+  <body>
+    <header class="site-header {{ page == 'home' ? 'site-header--home' : 'site-header--page' }}">
+      <div class="site-header__inner wrap">
+        <a href="{{ lang ? '/' ~ lang : '/' }}" class="token-logo">
+          {{ svg.inline({ name: "logo", class: "logo" }) }}
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item {{ page == 'about' ? 'is-active' }}"><a href="{{ lang ? '/' ~ lang : '/' }}about">{{ about }}</a></li>
+            <li class="header-nav__list-item"><a href="https://blog.toshi.org/">{{ blog }}</a></li>
+            <li class="header-nav__list-item"><a href="https://developers.toshi.org/">{{ developers }}</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="site-footer__nav">
+          <div class="site-footer__nav-item">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="site-footer__item"><a href="{{ lang ? '/' ~ lang : '/about' }}">{{ about }}</a></li>
+                <li class="site-footer__item"><a href="https://blog.toshi.org/">{{ blog }}</a></li>
+                <li class="site-footer__item"><a href="https://developers.toshi.org/">{{ developers }}</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a class="social-icon" href="https://twitter.com/toshi" title="Twitter">{{ svg.inline({ name: "twitter" }) }}</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

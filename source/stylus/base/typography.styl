@@ -1,0 +1,81 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.5625;
+  opacity: 0.6;
+  color: #181A20;
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: colors.green;
+    }
+  }
+
+  .page & {
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+  }
+}
+
+.alpha {
+  font-size: 3.75rem;
+  font-weight: fonts.bold;
+  line-height: 1.1;
+  letter-spacing: -.5px;
+  @media breakpoints.small {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}
+
+.beta {
+  font-size: 2.5rem;
+  font-weight: fonts.bold;
+  line-height: 1.461538462;
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
+  @media breakpoints.small {
+    opacity: 1;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.gamma {
+  font-weight: fonts.bold;
+  font-size: 1.5rem;
+  color: #181A20;
+  letter-spacing: 0.33px;
+  @media breakpoints.small {
+    font-size: 1.5rem;
+    margin-bottom: .6875rem;
+  }
+}
+
+.delta {
+  font-size: 1rem;
+  font-weight: fonts.bold;
+  margin-bottom: .625rem;
+  @media breakpoints.small {
+    font-size: 1.125rem;
+    font-weight: fonts.regular;
+  }
+}
+
+.zeta {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: fonts.bold;
+  margin-bottom: .625rem;
+  margin-top: 2.5rem;
+}

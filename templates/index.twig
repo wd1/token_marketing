@@ -1,0 +1,38 @@
+{% extends "_layout/main.twig" %}
+{% set page = "home" %}
+
+{% block content %}
+  {% include "_svg/home.twig" %}
+
+  <div class="hero">
+    <div class="hero__inner wrap grid">
+      <div class="hero__body">
+        <h1 class="alpha">{{ hero.title }}</h1>
+        <div class="hero__text">
+          <p>{{ hero.text }}</p>
+          <a href='https://itunes.apple.com/us/app/token-wallet/id1200463445?ls=1&mt=8'>
+            <img src="/images/app-store.jpg" srcset="/images/app-store.jpg, /images/app-store@2x.jpg 2x" alt="Download on the App Store">
+          </a>
+
+          <a href='https://play.google.com/store/apps/details?id=com.tokenbrowser'>
+            <img src="/images/googleplay.jpg" srcset="/images/googleplay.jpg, /images/googleplay@2x.jpg 2x" alt="Download on Google Play">
+          </a>
+        </div>
+      </div>
+
+      <img src="/images/phone-449.png" srcset="/images/phone-225.png 225w, /images/phone-298.png 298w, /images/phone-674.png 674w, /images/phone-894.png 894w, /images/phone-1347.png 1347w" sizes="(max-width: 21.875em) 90vw, 449px"  alt="">
+    </div>
+  </div>
+
+  <div class="wrap grid">
+    {% for feature in features %}
+      <div class="feature">
+      {{ svg.external({ prefix: "home", name: feature.icon, class: "feature__icon" }) }}
+      <h3 class="feature__title gamma">{{ feature.title }}</h3>
+      <p class="text">{{ feature.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+
+{% endblock %}
